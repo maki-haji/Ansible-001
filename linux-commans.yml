@@ -1,0 +1,33 @@
+Linux command
+minitering and trouble-shoot
+top
+shift +m memeo
+shif +p cpu
+shift +n proccess id
+
+vmstat
+vmstat 1
+vmstat 5    seconds
+
+lsof    lists open files
+
+tcpdump port 80     shows traffic comin
+
+
+netstat  shows all connecion /  ssh 
+
+ss    newly from netstat command
+
+htop  shows digital mode  
+
+
+iotop   shows the thereat [ which proccess mis cousing trouble]
+
+iftop shows which connection uses most resource
+
+nethog
+
+iptraf-ng
+
+
+
