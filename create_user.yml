@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: create Abdi user
+      user:
+        name: Abdi
+        home: /home/Abdi
+        shell: /bin/bash

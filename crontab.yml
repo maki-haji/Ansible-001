@@ -1,0 +1,15 @@
+---
+- hosts: mhost1
+  become: yes
+  tasks: 
+    - name: scedule cron
+      cron:
+        name: This is schdule by maki and mo
+        minute: "0"
+        hour: "10"
+        day: "*"
+        month: "*"
+        weekday: "4"
+        user: maki
+        job: "/home/maki/file1.sh"
+
