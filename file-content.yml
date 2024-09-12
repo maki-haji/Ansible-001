@@ -1,0 +1,21 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: touch a new file
+      file:
+        path: /tmp/banana
+        state: touch
+
+    - name: add line with copy
+      copy:
+        content: added by copy module
+        dest: /tmp/apple
+
+    - name: add line with lineinfile    
+      lineinfile:
+        path: /tmp/mango
+        line: added by linefile module
+        state: present
+        create: yes
+

@@ -5,13 +5,14 @@
     - name: start and enabl the httpd service
       service:
         name: httpd
-        state: started
+        state: latest
         enabled: yes
 
 
     - name: start and enable the firewalld
       service:
         name: firewalld
-        state: started
+        state: latest
         enabled: yes
+        
 
