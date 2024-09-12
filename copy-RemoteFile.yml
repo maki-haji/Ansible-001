@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.33.65
+  become: yes
+  tasks:
+    - name: copy file from remote server
+      fetch:
+        src: /home/maki/tpm
+        des: /tmp/
