@@ -1,3 +1,10 @@
 
 # Adhoc-cammand to check if remote users are created
 ansible mhost1 -m shell -a "cat /etc/passwd" -b
+
+Or else
+
+ansible mhost1 -m shell -a "cat /etc/passwd" -u maki
+
+ansible mhost1 -m command -a "getent passwd" -u maki
+
