@@ -1,0 +1,13 @@
+---
+- hosts: mhost1
+  become: yes
+  tasks:
+    - name: create users
+      user: 
+        name: "{{ item }}"
+      loop:
+        - mo
+        - ali
+        - malin
+        - abdi
+
