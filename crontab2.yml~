@@ -1,0 +1,23 @@
+---
+- hosts: mhost1
+  become: yes
+  tasks:
+    - name: schedule a weekly log cleaninup
+      copy:
+        src: /home/maki/Ansible-001
+        dest: /tmp
+        mode: "0755"
+
+
+#Every monday at 3:30 AM
+- name: xhedule a weekly log cleanup
+  cron:
+    name: weekly log cleanup
+    minute: "30"
+    hour: "*"
+    day: "*"
+    month: "*"
+    weekday: "1"
+    job: "/usr/local/bin/cleanup-log.sh"
+    user: "maki"
+

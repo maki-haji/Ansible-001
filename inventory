@@ -1,1 +1,2 @@
-172.31.36.69
+mhost1 ansible_hosts=172.31.36.69
+node ansible_hosts=172.31.33.65
